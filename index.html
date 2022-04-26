@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Health Care</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Things You Should Do</h1>
+        <br>
+        <div id="containertask">
+            <div id="newtask">
+                <input type="text" placeholder="Task to be done..">
+                <button id="push">Add</button>
+            </div>
+            <div id="tasks"></div>
+        </div>
+        <div>
+            <br><br><br>
+        </div>
+        <div>
+            <h1> Check Today BMI</h1><br>
+        </div>
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+            <span id="height-val">100 cm</span>
+        </div>
+
+        <p id="result">20.0</p>
+        <p id="category">Normal weight</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
